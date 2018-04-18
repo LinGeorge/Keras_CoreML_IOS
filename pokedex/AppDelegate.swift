@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  pokedex
 //
-//  Created by David Hoffman on 4/18/18.
+//  Created by Adrian Rosebrock on 4/18/18.
 //  Copyright © 2018 PyImageSearch. All rights reserved.
 //
 
@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // create the user interface window and make it visible
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        
+        // create the view controller and root view controller
+        let vc = ViewController()
+        window?.rootViewController = vc
+        
+        // return true upon success
         return true
     }
 
